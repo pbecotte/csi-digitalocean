@@ -124,7 +124,7 @@ metadata:
   labels:
     app: csi-do-controller
 spec:
-  selectors:
+  selector:
     matchLabels:
       app: csi-do-controller
   serviceName: "csi-do"
