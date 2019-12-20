@@ -349,6 +349,8 @@ apiVersion: apps/v1
 metadata:
   name: csi-do-node
   namespace: kube-system
+  labels:
+   app: csi-do-node-daemonset
 spec:
   selector:
     matchLabels:
