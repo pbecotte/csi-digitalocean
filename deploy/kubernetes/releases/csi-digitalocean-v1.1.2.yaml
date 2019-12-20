@@ -117,7 +117,7 @@ provisioner: dobs.csi.digitalocean.com
 ##############################################
 
 kind: StatefulSet
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 metadata:
   name: csi-do-controller
   namespace: kube-system
@@ -340,7 +340,7 @@ roleRef:
 ########################################
 
 kind: DaemonSet
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 metadata:
   name: csi-do-node
   namespace: kube-system
