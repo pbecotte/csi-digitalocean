@@ -121,7 +121,12 @@ apiVersion: apps/v1
 metadata:
   name: csi-do-controller
   namespace: kube-system
+  labels:
+    app: csi-do-controller
 spec:
+  selectors:
+    matchLabels:
+      app: csi-do-controller
   serviceName: "csi-do"
   replicas: 1
   template:
